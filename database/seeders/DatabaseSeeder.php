@@ -12,8 +12,10 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        User::factory(100)->create();
+    public function run() {
+        $users = User::factory(100)->create();
+        foreach($users as $user){
+            $user->credit(500);
+        }
     }
 }
