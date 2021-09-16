@@ -20,7 +20,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', [HomeController::class, 'index']);
+
 route::get('/users/{user}/credit',[TransactionController::class,'creditView']);
 route::post('/users/{user}/credit',[TransactionController::class,'credit']);
 

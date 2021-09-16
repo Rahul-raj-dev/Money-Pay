@@ -34,7 +34,6 @@ class TransactionController extends Controller
         return redirect('home')->with('success','success|Amount Debited Successfully.');
     }
     else{
-        // Session::flash('alert-warning', 'warning');
 
      return redirect('/home')->with('error', 'Failed|Insufficient Amount in Account');
     }
@@ -65,9 +64,6 @@ class TransactionController extends Controller
                         $receiver->credit(request()->amount);
                         return redirect('home');
    }
-
-
-
 
             public function history(User $user)
    {
