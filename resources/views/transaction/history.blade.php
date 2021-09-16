@@ -28,7 +28,7 @@
                                 </tr>
                             @endforeach
                         </table>
-
+                        <a class="btn btn-primary" href="/home">Back</a>
                     </div>
                 </div>
             </div>

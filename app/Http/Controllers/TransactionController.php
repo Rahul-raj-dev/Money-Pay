@@ -65,9 +65,6 @@ class TransactionController extends Controller
                         return redirect('home');
    }
 
-
-
-
             public function history(User $user)
    {
                 $transactions=$user->transactions;

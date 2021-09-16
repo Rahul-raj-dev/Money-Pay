@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DefController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TransactionController;
 /*
@@ -20,7 +21,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', [HomeController::class, 'index']);
+
 route::get('/users/{user}/credit',[TransactionController::class,'creditView']);
 route::post('/users/{user}/credit',[TransactionController::class,'credit']);
 
